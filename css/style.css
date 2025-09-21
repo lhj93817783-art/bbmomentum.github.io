@@ -1,0 +1,105 @@
+.hidden {
+    display: none;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center; 
+}
+
+#clock {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 180px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 550px;  
+    opacity: 0.8;
+    z-index: -1;          
+}
+
+* {
+    margin:0;
+}
+
+#ent-please {
+    width: 250px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:2px solid black;
+    background-color: transparent;
+
+}
+
+#ent-please::placeholder {
+    text-align: center;
+}
+
+.image {
+    width: 100vw;
+    height: 100vh;
+    position:absolute;
+    background-size: cover;
+    object-fit: cover;
+    top:0px;
+    left:0px;
+    z-index: -2;
+    opacity:0.8;
+}
+
+#login-input {
+    background-color: transparent;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:2px solid black;
+    width:500px;
+    height: 45px;
+    font-size: 40px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 0.7;
+}
+
+#login-button {
+    background-color: transparent;
+    border-radius: 7px;
+    border-top:2px solid black;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    border-bottom:2px solid black;
+}
+
+.login-form {
+    width: auto;
+    height: auto;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+
+}
+
+#greeting {
+    font-size: 50px;
+}
+
+/* 글래스모피즘 적용공부 */
+/*background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 10px rgba(255, 255, 255, 1);
+  position: relative;
+  overflow: hidden;
